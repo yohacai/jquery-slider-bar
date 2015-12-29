@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="jquery-1.8.3.js"></script>
+<script src="jquery-slider-bar.min.js"></script>
+</head>
+<body >
+<div style="width:400px;height:20px;" id="test">
+</div>
+
+
+<script>
+$("#test").sliderBar();
+$("#test").onchange(function()
+{
+   console.log("Value is changed!");
+});
+</script>
+</body>
+</html>
