@@ -2,10 +2,10 @@
 <html>
 <head>
 <script src="jquery-1.8.3.js"></script>
-<script src="jquery-slider-bar.min.js"></script>
+<script src="jquery-slider-bar.js"></script>
 </head>
 <body >
-<div style="width:400px;height:20px;" id="test">
+<div style="width:200px;height:10px;" id="test">
 </div>
 
 
@@ -13,7 +13,7 @@
 $("#test").sliderBar();
 $("#test").onchange(function()
 {
-   console.log("Value is changed!");
+   console.log(parseFloat($("#test").val()).toFixed(2));
 });
 </script>
 </body>
